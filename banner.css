@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+.banner{
+    display: block;
+    height: 180px;
+    background: no-repeat center top;
+    width: 100%;
+    background-image: url("img/banner.jpg");
+    margin-top: 46px;
+}
+.banner .img{
+    background: url("img/img1.png")center no-repeat ;
+    width: 222px;
+    height: 180px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 46px;
+}

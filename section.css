@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.section1{
+    width: 1160px;
+    position: relative;
+    margin: 36px auto;
+    clear: both;
+}
+
+
+
+
+.section1 .header{
+    margin-bottom: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+.section1 .header b{
+    font-size: 18px;
+    font-weight: bold;
+    color: #122;
+    float: left;
+    line-height: 40px;
+    display: inline-block;
+    margin: 0px 16px;
+    font-family: 微软雅黑;
+}
+.section1 .header p{
+    color: #999;
+    float: left;
+    line-height: 40px;
+    font-size: 12px;
+    display: inline-block;
+    font-family: 微软雅黑;
+}
+
+
+
+
+
+
+.section1 .block{
+    height: 130px;
+}
+.section1 .block .blocktip{
+    width: 160px;
+    height: 130px;
+    margin: 0 20px 10px 0;
+    overflow: hidden;
+}
+.section1 .block .blocktip .pic{
+    cursor: pointer;
+    width: 160px;
+    height: 90px;
+}
+.section1 .block .blocktip .pic img{
+    border-radius: 3px;
+}
+.section1 .block .blocktip .shadow{
+    background: rgba(0,0,0,0.7);
+    width: 160px;
+    height: 90px;
+    border-radius: 3px;
+    z-index: 999;
+    display: none;
+    position: relative;
+    top: -93px;
+}
+.section1 .block .blocktip .pic:hover .shadow{
+    display: block;
+
+}
+.section1 .block .blocktip p{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    line-height: 18px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.section1 .block .blocktip span{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #999;
+    cursor: pointer;
+}
+.section1 .block .blocktip p:hover{
+    color: #fd4c5d;
+}
+.section1 .block .blocktip span:hover{
+    color: #fd4c5d;
+}
+

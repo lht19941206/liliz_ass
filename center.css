@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+.center{
+    width: 1160px;
+    clear: both;
+    height: 260px;
+    padding: 10px 10px 0 10px;
+    margin: 15px auto;
+}
+
+.center .block{
+    float: right;
+    width: 688px;
+    height: 260px;
+}
+
+
+
+
+.center .block1{
+    width: 688px;
+    height: 123px;
+}
+.center .block1 li{
+    list-style: none;
+}
+.center .block1 .tip1{
+    float: left;
+    width: 216px;
+    height: 121px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 3px 3px 3px 3px;
+}
+.center .block1 .tip1 .mask{
+    height: 55px;
+    line-height: 28px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    top: -55px;
+    z-index: 2;
+    width: 100%;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: white;
+    background: url("img/download.png") 0 bottom repeat-x;
+}
+.center .block1 .tip1 .mask a{
+    padding: 0 12px;
+    margin: 12px 0;
+    height: 40px;
+    line-height: 75px;
+    overflow: hidden;
+    font-style: normal;
+}
+.center .block1 .tip1 .mask p{
+    padding: 0 12px;
+    margin: 12px 0;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.center .block1 .tip1:hover .mask{
+    top: -123px;
+    color: #fff;
+    background: #ee9565;
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+}
+
+
+
+
+.center .block1 .tip2{
+    float: right;
+    width: 452px;
+    height: 123px;
+    cursor: pointer;
+
+}
+.center .block1 .tip2 img{
+    border-radius: 3px 3px 3px 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.center .block2{
+    width: 688px;
+    height: 121px;
+    margin-top: 16px;
+}
+.center .block2 li{
+    list-style: none;
+}
+.center .block2 .tip1{
+    float: left;
+    width: 216px;
+    height: 121px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 3px 3px 3px 3px;
+}
+.center .block2 .tip1 .mask{
+    height: 55px;
+    line-height: 28px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    top: -55px;
+    z-index: 2;
+    width: 100%;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: white;
+    background: url("img/download.png") 0 bottom repeat-x;
+}
+.center .block2 .tip1 .mask a{
+    padding: 0 12px;
+    margin: 12px 0;
+    height: 40px;
+    line-height: 75px;
+    overflow: hidden;
+    font-style: normal;
+}
+.center .block2 .tip1 .mask p{
+    padding: 0 12px;
+    margin: 12px 0;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.center .block2 .tip1:hover .mask{
+    top: -123px;
+    color: #fff;
+    background: #ee9565;
+    background: rgba(0,0,0,0.7);
+    height: 123px;
+}
+
+
+
+
+
+
+
+
+
+.center .block2 .tip2{
+    float: left;
+    margin-left: 20px;
+    width: 216px;
+    height: 121px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 3px 3px 3px 3px;
+}
+.center .block2 .tip2 .mask{
+    height: 55px;
+    line-height: 28px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    top: -55px;
+    z-index: 2;
+    width: 100%;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: white;
+    background: url("img/download.png") 0 bottom repeat-x;
+}
+.center .block2 .tip2 .mask a{
+    padding: 0 12px;
+    margin: 12px 0;
+    height: 40px;
+    line-height: 75px;
+    overflow: hidden;
+    font-style: normal;
+}
+.center .block2 .tip2 .mask p{
+    padding: 0 12px;
+    margin: 12px 0;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.center .block2 .tip2:hover .mask{
+    top: -123px;
+    color: #fff;
+    background: #ee9565;
+    background: rgba(0,0,0,0.7);
+    height: 123px;
+}
+
+
+
+
+
+
+
+.center .block2 .tip3{
+    float: right;
+    width: 216px;
+    height: 121px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 3px 3px 3px 3px;
+}
+.center .block2 .tip3 .mask{
+    height: 55px;
+    line-height: 28px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    top: -55px;
+    z-index: 2;
+    width: 100%;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: white;
+    background: url("img/download.png") 0 bottom repeat-x;
+}
+.center .block2 .tip3 .mask a{
+    padding: 0 12px;
+    margin: 12px 0;
+    height: 40px;
+    line-height: 75px;
+    overflow: hidden;
+    font-style: normal;
+}
+.center .block2 .tip3 .mask p{
+    padding: 0 12px;
+    margin: 12px 0;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.center .block2 .tip3:hover .mask{
+    top: -123px;
+    color: #fff;
+    background: #ee9565;
+    background: rgba(0,0,0,0.7);
+    height: 123px;
+}

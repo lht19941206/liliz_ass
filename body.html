@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>acfun官网</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        #list{
+            width: 1160px;
+            height: 46px;
+        }
+        .clear:after{
+            overflow:hidden;
+            content:"";
+            display:block;
+            clear:both;
+            height:0;
+        }
+        #wrap{
+            width: 452px;
+            height:260px;
+            position:relative;
+            overflow: hidden;
+            float: left;
+            cursor: pointer;
+            border-radius: 3px 3px 3px 3px;
+        }
+        #inner{
+            width: 1000%;
+            height:100%;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        #inner img{
+            width:10%;
+            float: left;
+            height: 260px;
+        }
+        .paganation{
+            height: 28px;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            right: 0;
+            padding: 0 10px;
+        }
+        .paganation span{
+            margin: 10px 0 0 8px;
+            border-radius: 5px;
+            width: 8px;
+            height: 8px;
+            line-height: 8px;
+            overflow: hidden;
+            background: #fff;
+            display: inline-block;
+            text-indent: 20px;
+            cursor: pointer;
+        }
+        .paganation .selected{
+            background: #fd4c5d;
+            width: 16px;
+        }
+        #right{
+            right: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="header-top.css"/>
+    <link rel="stylesheet" href="common.css"/>
+    <link rel="stylesheet" href="banner.css"/>
+    <link rel="stylesheet" href="guide.css"/>
+    <link rel="stylesheet" href="center.css"/>
+    <link rel="stylesheet" href="section.css"/>
+    <link rel="stylesheet" href="section2.css"/>
+    <link rel="stylesheet" href="section3.css"/>
+    <link rel="stylesheet" href="section4.css"/>
+    <link rel="stylesheet" href="footer.css"/>
+    <script src="../20160922/jquery.lazyload.js"></script>
+</head>
+<body>
+<div class="header-top">
+    <div class="top-con">
+        <h1 class="logo">
+            <a href="">
+                <img src="img/logo.png" width="88" height="27"/>
+            </a>
+        </h1>
+        <ul class="header-guide">
+            <li class="li1">
+                <a href=""><i class="iconfont">&#xe601;</i></a>
+            </li>
+            <li class="li2">
+                <a href=""><i class="iconfont">&#xe603;</i></a>
+                <div class="sub">
+                    <a href=""><span>投视频</span></a>
+                    <a href=""><p>投文章</p></a>
+                </div>
+            </li>
+            <li class="li3">
+                    <a href=""><i class="iconfont">&#xe602;</i></a>
+                    <div class="sub">
+                        <span>尚未记录任何历史信息</span>
+                        <a href=""><h3>查看更多</h3></a>
+                    </div>
+            </li>
+        </ul>
+        <ul class="header-guide2">
+            <li>
+                <a href=""><span>登陆/注册</span></a>
+            </li>
+            <li class="li2">
+                <a href="">
+                    <div class="dow">
+                        <span>下载客户端</span>
+                    </div>
+                </a>
+                <div class="sub">
+                    <img src="img/app-download.png" alt=""/>
+                </div>
+            </li>
+            <li>
+                <i class="iconfont">&#xe604;</i>
+            </li>
+        </ul>
+        <div class="header-guide3">
+            <input type="text" placeholder="史丹利快报第三季" class="search"/>
+            <div class="search2">
+                <i class="iconfont">&#xe600;</i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner">
+    <div class="img">
+
+    </div>
+</div>
+<div class="guide">
+    <div class="block">
+        <ul id="list">
+            <a href="">
+                <li class="tip1">
+                    首页
+                </li>
+            </a>
+            <a href="">
+                <li class="tip2">
+                    番剧
+                </li>
+            </a>
+
+                <li class="tip">
+                    <a href=""><span>动画</span> </a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>动画短片</li></a>
+                            <a href=""><li>动画资讯</li></a>
+                            <a href=""><li>旧番补档</li></a>
+                            <a href=""><li>新番连载</li></a>
+                            <a href=""><li>MAD·AMV</li></a>
+                            <a href=""><li>MMD·3D</li></a>
+                            <a href=""><li>2.5次元</li></a>
+                            <a href=""><li>国产动画</li></a>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>音乐</span></a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>原创·翻唱</li></a>
+                            <a href=""><li>演奏</li></a>
+                            <a href=""><li>Vocaloid</li></a>
+                            <a href=""><li>日系音乐</li></a>
+                            <a href=""><li>综合音乐</li></a>
+                            <a href=""><li>演唱会</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>舞蹈</span></a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>宅舞</li></a>
+                            <a href=""><li>综合舞蹈</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>游戏</span></a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>主机单机</li></a>
+                            <a href=""><li>游戏集锦</li></a>
+                            <a href=""><li>电子竞技</li></a>
+                            <a href=""><li>英雄联盟</li></a>
+                            <a href=""><li>守望先锋</li></a>
+                            <a href=""><li>桌游卡牌</li></a>
+                            <a href=""><li>Mugen</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>娱乐</span></a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>生活娱乐</li></a>
+                            <a href=""><li>鬼畜调教</li></a>
+                            <a href=""><li>萌宠</li></a>
+                            <a href=""><li>美食</li></a>
+                            <a href=""><li>综艺</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>科技</span></a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>SF</li></a>
+                            <a href=""><li>黑科技</li></a>
+                            <a href=""><li>数码</li></a>
+                            <a href=""><li>广告</li></a>
+                            <a href=""><li>白科技</li></a>
+                            <a href=""><li>自我发电</li></a>
+                            <a href=""><li>科学技术</li></a>
+                            <a href=""><li>汽车</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>影视</span></a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>电影</li></a>
+                            <a href=""><li>日剧</li></a>
+                            <a href=""><li>美剧</li></a>
+                            <a href=""><li>国产剧</li></a>
+                            <a href=""><li>网络剧</li></a>
+                            <a href=""><li>韩剧</li></a>
+                            <a href=""><li>布袋·特摄</li></a>
+                            <a href=""><li>纪录片</li></a>
+                            <a href=""><li>其他</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>体育</span></a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>综合体育</li></a>
+                            <a href=""><li>足球</li></a>
+                            <a href=""><li>篮球</li></a>
+                            <a href=""><li>搏击</li></a>
+                            <a href=""><li>11区体育</li></a>
+                            <a href=""><li>惊奇体育</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>彼女</span> </a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>造型</li></a>
+                            <a href=""><li>西皮</li></a>
+                            <a href=""><li>爱豆</li></a>
+                            <a href=""><li>其他</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>鱼塘</span></a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>军事</li></a>
+                            <a href=""><li>历史</li></a>
+                            <a href=""><li>焦点</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>文章</span></a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>文章·综合</li></a>
+                            <a href=""><li>工作·情感</li></a>
+                            <a href=""><li>动漫文化</li></a>
+                            <a href=""><li>漫画·轻小说</li></a>
+                            <a href=""><li>游戏</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li class="tip">
+                    <a href=""><span>合辑</span></a>
+                    <div class="con">
+                        <ul>
+                            <a href=""><li>Acfun专题</li></a>
+                        </ul>
+                    </div>
+
+                </li>
+
+            <a href="">
+                <li class="tip3">
+                    全站排行榜
+                </li>
+            </a>
+
+        </ul>
+    </div>
+   <!-- <script>
+        window.onload =function change() {
+            var title = document.getElementsByClassName('tip')
+            var body = document.getElementsByClassName('con');
+            for ( var i = 0; i < title.length; i++) {
+                title[i].id = i;
+                title[i].onmouseover = function () {
+                    hover(this.id);
+                }
+                title[i].onmouseout = function(){
+                    out.a = this.id;
+                    setTimeout(out,2000);
+                }
+            }
+            function hover(nowindex){
+                for(var j = 0;j<title.length;j++){
+                    if(j == nowindex){
+                        body[j].style.display = 'block';
+                    }else{
+                        body[j].style.display = 'none';
+                    }
+                }
+            }
+            var out = function(){
+               for(var j = 0;j<title.length;j++){
+                    if(j == out.a){
+                        body[j].style.display = 'none';
+                    }
+                }
+            }
+        }
+    </script>-->
+</div>
+<div class="center">
+    <div id="wrap"><!‐‐ 图片展示区 ‐‐>
+        <div id="inner" class="clear"><!‐‐ 所有图片并排的块 ‐‐>
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.jpg" alt=""/>
+            <img src="img/1.jpg" alt="">
+        </div>
+        <div class="paganation" id="paganation"><!‐‐ 页面按钮区域 ‐‐>
+            <span class ="selected">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="block1">
+            <ul>
+                <li class="tip1">
+                    <img src="img/01.jpg" alt=""/>
+                    <div class="mask">
+                        <a>漫威十大蜘蛛侠系列反派</a>
+                        <p>
+                            UP:柚子木字幕组
+                        </p>
+                    </div>
+                </li>
+                <li class="tip2">
+                    <img src="img/02.jpg" alt=""/>
+
+                </li>
+            </ul>
+        </div>
+        <div class="block2">
+            <ul>
+                <li class="tip1">
+                    <img src="img/03.gif" alt=""/>
+                    <div class="mask">
+                        <a>2016年动物界傻缺集锦</a>
+                        <p>
+                            UP:破腚吃枣药丸
+                        </p>
+                    </div>
+                </li>
+                <li class="tip2">
+                    <img src="img/04.jpg" alt=""/>
+                    <div class="mask">
+                        <a>神还原！当英文歌曲遇上直译</a>
+                        <p>
+                            UP:大建不出射水鱼不改名
+                        </p>
+                    </div>
+                </li>
+                <li class="tip3">
+                    <img src="img/05.jpg" alt=""/>
+                    <div class="mask">
+                        <a>美美哒IU仿妆就是这么简单！</a>
+                        <p>
+                            UP:路遥姑娘
+                        </p>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var wrap=document.getElementById("wrap");
+        var inner=document.getElementById("inner");
+        var spanList=document.getElementById("paganation").getElementsByTagName("span");
+        var time; //主要用来设置自动滑动的计时器
+        var index=0;//记录每次滑动图片的下标
+        var Distance=wrap.offsetWidth;//获取展示区的宽度，即每张图片的宽度
+        /*
+         * offsetwidth:是元素相对父元素的偏移宽度。等于border+padding+width
+         * */
+
+        //定义图片滑动的函数
+        function AutoGo(){
+            var start=inner.offsetLeft;//获取移动块当前的left的开始坐标
+            var end=index*Distance*(-1);//获取移动块移动结束的坐标。
+            //计算公式即当移动到第三张图片时，图片下标为2乘以图片的宽度就是块的left值。
+            var change=end-start;//偏移量
+            var timer;//用计时器为图片添加动画效果
+            var t=0;
+            var maxT=50;//用于计算图片的偏移量： 值越大移动的越慢(计算时做分母)
+
+
+            /*
+             * 先把按钮状态清除,再让对应按钮改变状态
+             * */
+            clear();
+            if(index==spanList.length){
+                spanList[0].className="selected";
+            }else{
+                spanList[index].className="selected";
+            }
+
+            /*clearInterval(timer);*///开启计时器前先把之前的清
+            timer=setInterval(function(){
+                t++;
+                if(t>=maxT){//当图片到达终点停止计时器
+                    clearInterval(timer);
+                }
+                inner.style.left=change/maxT*t+start+"px";
+                if(index==spanList.length&&t>=maxT){
+                    inner.style.left=0;
+                    index=0; //当图片到最后一张时把它瞬间切换回第一张，由于都同一张图片不会影响效果
+                }
+            },17);//每隔17毫秒让块移动
+        }
+
+
+        /*
+         *   自动轮动图片方法
+         * */
+        function forward(){
+            index++;
+            //当图片下标到最后一张把小标换0
+            if(index>spanList.length){
+                index=0;
+            }
+            AutoGo();
+        }
+        //图片向左滑动函数
+        function backward(){
+            index--;
+            //当图片下标到第一张让它返回到倒数第二张，
+            //left值要变到最后一张才不影响过渡效果
+            if(index<0){
+                index=spanList.length-1;
+                inner.style.left=(index+1)*Distance*(-1)+"px";
+            }
+            AutoGo();
+        }
+        //开启图片自动向右滑动的计时器
+        time=setInterval(forward,3000);
+
+        //设置鼠标悬停动画停止
+        wrap.onmouseover=function(){
+            clearInterval(time);
+        };
+        wrap.onmouseout=function(){
+            time=setInterval(forward,3000);
+        };
+        //遍历每个按钮让其切换到对应图片
+        for(var i=0;i<spanList.length;i++){
+            spanList[i].onclick=function(){
+                index=this.innerText-1;
+                AutoGo();
+            }
+        }
+        //清除页面所有按钮状态颜色
+        function clear(){
+            for(var i=0;i<spanList.length;i++){
+                spanList[i].className="";
+            }
+        }
+    </script>
+</div>
+<div class="section1">
+    <div class="header">
+        <img src="img/猴子.gif" alt="" width="40" height="40" style="float: left"/>
+        <b>猴子推荐</b>
+        <p>我们看了不止十遍</p>
+    </div>
+
+    <div class="block">
+        <div class="blocktip" style="float: left">
+            <div class="pic">
+                <img src="img/s1_01.jpeg" alt=""/>
+                <div class="shadow">
+                </div>
+            </div>
+            <p>我终于知道寡妇为什么要削！</p>
+            <span>UP：暴暴勺暴暴</span>
+        </div>
+        <div class="blocktip"style="float: left">
+            <div class="pic">
+                <img src="img/s1_02.png" alt=""/>
+                <div class="shadow">
+                </div>
+            </div>
+            <p>困倦的意旨★一股清流 ?</p>
+            <span>UP:橘菊子です</span>
+        </div>
+        <div class="blocktip"style="float: left">
+            <div class="pic">
+                <img src="img/s1_03.jpg" alt=""/>
+                <div class="shadow">
+                </div>
+            </div>
+            <p>极限牛人九月第一周</p>
+            <span>UP:PeopleareAwesome</span>
+        </div>
+        <div class="blocktip"style="float: left">
+            <div class="pic">
+                <img src="img/s1_04.jpg" alt=""/>
+                <div class="shadow">
+                </div>
+            </div>
+            <p>历年大河剧片头合集</p>
+            <span>UP:魔法少女胡永儿</span>
+        </div>
+        <div class="blocktip"style="float: left">
+            <div class="pic">
+                <img src="img/s1_05.png" alt=""/>
+                <div class="shadow">
+                </div>
+            </div>
+            <p>能放弃就不叫梦想！宇宙兄弟</p>
+            <span>UP:柚子醋一壶</span>
+        </div>
+        <div class="right" style="float: right">
+            <img src="img/s1_06.png" alt="" width="260" height="128"/>
+        </div>
+    </div>
+</div>
+<div class="section2">
+    <div class="left">
+        <div class="header">
+            <img src="img/香蕉.gif" alt="" width="40" height="40" style="float: left"/>
+            <b>香蕉榜</b>
+            <span>野生动物投食请谨慎</span>
+            <div class="right" style="float: right">
+                <div class="day">
+                    <p>日榜</p>
+                </div>
+                <div class="weekend">
+                    <p>周榜</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s2_01.gif" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>神技能！发现会被打死吧啊</p>
+                <span>UP：大白话</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s2_02.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>炉石传说：【天天素材库】 第</p>
+                <span>UP：天天卡牌</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s2_03.gif" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>AcFun评论才是本体【2016年</p>
+                <span>UP：UP: 鲁路修·VI布里塔尼亚</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s2_04.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>papi酱的周一放送——出国</p>
+                <span>UP：papi酱</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s2_05.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>女高中生在计程车上演唱《小</p>
+                <span>UP：弱女子</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s2_06.gif" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>网络上常见的GIF动态图 第二</p>
+                <span>UP：九星之歌</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s2_07.JPG" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>主播炸了106：丑开遭队友出</p>
+                <span>UP：聚印象视频</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s2_08.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>卖血：毕（开）业（学）那</p>
+                <span>UP：卖血上网a</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s2_09.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>陈一发儿，黑人有一个特点，</p>
+                <span>UP：萝菽菽</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s2_10.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>王霸胆——7种住在中国的歪</p>
+                <span>UP：老美王霸胆</span>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img src="img/chang.jpg" alt="" width="880" height="100"/>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="header">
+            <img src="img/文章.gif" alt="" width="40" height="40" style="float: left"/>
+            <b>文章</b>
+        </div>
+        <div class="block">
+            <ul id="list2">
+                <li class="tipp" style="background-color: white">
+                    综合
+                    <ul class="conn" style="display: block">
+                        <li class="has-img">
+                            <a href="" target="_blank" title="那些年外挂毁掉的热门网游
+UP:aw27798203
+发布于2016-09-05 15:02:28&nbsp;/&nbsp;点击:96124&nbsp;/&nbsp;评论:977">
+                                <img src="img/list1.jpg" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+
+                                <b><a href="" target="_blank" title="那些年外挂毁掉的热门网游
+UP:aw27798203
+发布于2016-09-05 15:02:28&nbsp;/&nbsp;点击:96124&nbsp;/&nbsp;评论:977">
+                                    那些年外挂毁掉的热门网游
+                                    <p>从变速齿轮到抓包改数据</p>
+                                    <p>UP: aw27798203</p>
+                                </a>
+                                </b>
+                        </li>
+                        <li><a href="" target="_blank" title="男子丢失手机打通后传来怪声 从此开始夜半惊魂
+UP:会计
+发布于2016-09-07 11:51:14&nbsp;/&nbsp;点击:2746&nbsp;/&nbsp;评论:18">男子丢失手机打通后传来怪声 从此开始夜半惊魂</a></li>
+                        <li><a href="" target="_blank" title="曹云金经纪人：被逼到这份上，有些人太过分
+UP:会计
+发布于2016-09-07 08:13:01&nbsp;/&nbsp;点击:11942&nbsp;/&nbsp;评论:253">曹云金经纪人：被逼到这份上，有些人太过分</a></li>
+                        <li><a href="" target="_blank" title="中国量子雷达研制成功 有哪些技术优势
+UP:会计
+发布于2016-09-07 12:14:42&nbsp;/&nbsp;点击:1384&nbsp;/&nbsp;评论:11">中国量子雷达研制成功 有哪些技术优势</a></li>
+                        <li><a href="" target="_blank" title="懒理骂战！郭德纲合影憨豆 与章子怡搞怪互动(图)
+UP:Thorny
+发布于2016-09-07 10:26:59&nbsp;/&nbsp;点击:7549&nbsp;/&nbsp;评论:116">懒理骂战！郭德纲合影憨豆 与章子怡搞怪互动(图)</a></li>
+                        <li><a href="" target="_blank" title="【连载】第四章：坠楼的尸体
+UP:刘家奇葩233
+发布于2016-09-07 10:45:56&nbsp;/&nbsp;点击:389&nbsp;/&nbsp;评论:1">【连载】第四章：坠楼的尸体</a></li>
+                        <li><a href="" target="_blank" title="解放军王牌部队装备一特殊炮弹 能侦察还能干扰(图)
+UP:羽烈王
+发布于2016-09-07 10:59:21&nbsp;/&nbsp;点击:2319&nbsp;/&nbsp;评论:16">解放军王牌部队装备一特殊炮弹 能侦察还能干扰(图)</a></li>
+                        <li><a href="" target="_blank" title="日本球员将漏气足球交给伊朗裁判被判罚黄牌 网友：十动然黄
+UP:水无虚
+发布于2016-09-07 11:09:35&nbsp;/&nbsp;点击:4633&nbsp;/&nbsp;评论:28">日本球员将漏气足球交给伊朗裁判被判罚黄牌 网友：十动然黄</a></li>
+                        <li><a href="" target="_blank" title="“非著名主持人微博辱骂河南人”被起诉：郑州法院已受理
+UP:水无虚
+发布于2016-09-07 12:10:48&nbsp;/&nbsp;点击:2635&nbsp;/&nbsp;评论:28">“非著名主持人微博辱骂河南人”被起诉：郑州法院已受理</a></li>
+                        <li><a href="" target="_blank" title="杭州一女子的钱包在日本遗失 被绍兴游客捡回来
+UP:梦斩千钧
+发布于2016-09-07 09:16:05&nbsp;/&nbsp;点击:3776&nbsp;/&nbsp;评论:35">杭州一女子的钱包在日本遗失 被绍兴游客捡回来</a></li>
+                        <li><a href="" target="_blank" title="很多人觉得山东很土，山东卫视大概要背一半的锅
+UP:要你命叁迁
+发布于2016-09-07 09:26:01&nbsp;/&nbsp;点击:16065&nbsp;/&nbsp;评论:295">很多人觉得山东很土，山东卫视大概要背一半的锅</a></li>
+                    </ul>
+                </li>
+                <li class="tipp">
+                    工作情感
+                    <ul class="conn" style="display: none">
+                        <li class="has-img">
+                            <a href="" target="_blank" title="那些年外挂毁掉的热门网游
+UP:aw27798203
+发布于2016-09-05 15:02:28&nbsp;/&nbsp;点击:96124&nbsp;/&nbsp;评论:977">
+                                <img src="img/list2.png" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+
+                            <b><a href="" target="_blank" title="老公出轨找小三
+UP: aw26648531
+发布于2016-09-05 15:02:28&nbsp;/&nbsp;点击:96124&nbsp;/&nbsp;评论:977">
+                                老公出轨找小三
+                                <p>社会问题还是什么</p>
+                                <p>UP: aw26648531</p>
+                            </a>
+                            </b>
+                        </li>
+                        <li><a href="" target="_blank" title="说下我最近一段感情经历，老司机来指点下
+UP:熊熊熊熊呐
+发布于2016-09-07 00:21:14&nbsp;/&nbsp;点击:2451&nbsp;/&nbsp;评论:35">说下我最近一段感情经历，老司机来指点下</a></li>
+                        <li><a href="" target="_blank" title="大学狗人生旅途有点迷失方向了，求各位老司机指点一下
+UP:取个ID先用着吧
+发布于2016-09-07 11:18:19&nbsp;/&nbsp;点击:1127&nbsp;/&nbsp;评论:3">大学狗人生旅途有点迷失方向了，求各位老司机指点一下</a></li>
+                        <li><a href="" target="_blank" title="我妈快只活在自己的世界中了 好严重的自闭症
+UP:卡博雷
+发布于2016-09-06 22:49:02&nbsp;/&nbsp;点击:3496&nbsp;/&nbsp;评论:32">我妈快只活在自己的世界中了 好严重的自闭症</a></li>
+                        <li><a href="" target="_blank" title="纠结去国企混吃等死，还是出来自己奋斗一下
+UP:王源的父亲
+发布于2016-09-07 01:54:55&nbsp;/&nbsp;点击:5124&nbsp;/&nbsp;评论:102">纠结去国企混吃等死，还是出来自己奋斗一下</a></li>
+                        <li><a href="" target="_blank" title="自己这几年的事吧
+UP:比利说好的爱情呢
+发布于2016-09-07 03:12:36&nbsp;/&nbsp;点击:1539&nbsp;/&nbsp;评论:9">自己这几年的事吧</a></li>
+                        <li><a href="" target="_blank" title="好！想！脱！团！啊！
+UP:霸霸丶
+发布于2016-09-07 00:00:22&nbsp;/&nbsp;点击:3171&nbsp;/&nbsp;评论:45">好！想！脱！团！啊！</a></li>
+                        <li><a href="" target="_blank" title="分享成功转前端的故事
+UP:粉红耀眼猪
+发布于2016-09-06 21:51:04&nbsp;/&nbsp;点击:3365&nbsp;/&nbsp;评论:49">分享成功转前端的故事</a></li>
+                        <li><a href="" target="_blank" title="网恋（单恋）的痛苦吗啊啊啊啊 啊
+UP:百叶千张
+发布于2016-09-06 16:11:43&nbsp;/&nbsp;点击:3244&nbsp;/&nbsp;评论:55">网恋（单恋）的痛苦吗啊啊啊啊 啊</a></li>
+                        <li><a href="" target="_blank" title="一个23级魔法师的迷茫，求助各位Acer
+UP:店小二EZ
+发布于2016-09-06 20:32:40&nbsp;/&nbsp;点击:1956&nbsp;/&nbsp;评论:17">一个23级魔法师的迷茫，求助各位Acer</a></li>
+                        <li><a href="" target="_blank" title="一个步入社会的ACer来谈谈ACer关心的恋爱问题
+UP:吴小异吴美妞
+发布于2016-09-06 23:54:16&nbsp;/&nbsp;点击:2262&nbsp;/&nbsp;评论:44">一个步入社会的ACer来谈谈ACer关心的恋爱问题</a></li>
+                    </ul>
+                </li>
+                <li class="tipp">
+                    动漫文化
+                    <ul class="conn" style="display: none">
+                        <li class="has-img">
+                            <a href="" target="_blank" title="那些年外挂毁掉的热门网游
+UP:aw27798203
+发布于2016-09-05 15:02:28&nbsp;/&nbsp;点击:96124&nbsp;/&nbsp;评论:977">
+                                <img src="img/list3.jpg" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+
+                            <b><a href="" target="_blank" title="新海诚系建筑社长之子
+UP: aw85542361
+发布于2016-09-05 15:02:28&nbsp;/&nbsp;点击:96124&nbsp;/&nbsp;评论:977">
+                                新海诚系建筑社长之子
+                                <p>你跟别人的差距有多大</p>
+                                <p>UP: aw85542361</p>
+                            </a>
+                            </b>
+                        </li>
+                        <li><a href="" target="_blank" title="轻小说《异世界食堂》动画化决定 穿越时空品尝美食
+UP:会计
+发布于2016-09-07 11:44:51&nbsp;/&nbsp;点击:710&nbsp;/&nbsp;评论:1">轻小说《异世界食堂》动画化决定 穿越时空品尝美食</a></li>
+                        <li><a href="" target="_blank" title="吉卜力总选举结果公布！《千与千寻》夺冠
+UP:可怜的小木头
+发布于2016-09-06 23:32:47&nbsp;/&nbsp;点击:2114&nbsp;/&nbsp;评论:17">吉卜力总选举结果公布！《千与千寻》夺冠</a></li>
+                        <li><a href="" target="_blank" title="《Fate/EXTELLA》最新英灵PV 飞舞的死棘之枪与核爆无二打
+UP:会计
+发布于2016-09-06 21:14:24&nbsp;/&nbsp;点击:2531&nbsp;/&nbsp;评论:7">《Fate/EXTELLA》最新英灵PV 飞舞的死棘之枪与核爆无二打</a></li>
+                        <li><a href="" target="_blank" title="秒5作者新海诚最新作品《你的名字》创票房奇迹 ！
+UP:会计
+发布于2016-09-07 11:54:50&nbsp;/&nbsp;点击:760&nbsp;/&nbsp;评论:1">秒5作者新海诚最新作品《你的名字》创票房奇迹 ！</a></li>
+                        <li><a href="" target="_blank" title="麻枝准病情严重依然寻求工作 网友表示很心酸
+UP:会计
+发布于2016-09-07 10:48:22&nbsp;/&nbsp;点击:2053&nbsp;/&nbsp;评论:10">麻枝准病情严重依然寻求工作 网友表示很心酸</a></li>
+                        <li><a href="" target="_blank" title="网友称猎人 337 话台词代表富坚义博内心真实想法还是想好好连载
+UP:会计
+发布于2016-09-07 11:58:28&nbsp;/&nbsp;点击:1157&nbsp;/&nbsp;评论:2">网友称猎人 337 话台词代表富坚义博内心真实想法还是想好好连载</a></li>
+                        <li><a href="" target="_blank" title="《黑执事》葬仪屋1/8手办登场 死神镰刀还原逼真
+UP:会计
+发布于2016-09-07 11:45:34&nbsp;/&nbsp;点击:1123&nbsp;/&nbsp;评论:1">《黑执事》葬仪屋1/8手办登场 死神镰刀还原逼真</a></li>
+                        <li><a href="" target="_blank" title="什么样才是“有魅力”的主人公？
+UP:九折坂二人
+发布于2016-09-07 01:50:33&nbsp;/&nbsp;点击:2102&nbsp;/&nbsp;评论:26">什么样才是“有魅力”的主人公？</a></li>
+                        <li><a href="" target="_blank" title="提前做好这些准备，cos你就成功了一半！
+UP:二次元の呆呆阿卜
+发布于2016-09-06 18:03:50&nbsp;/&nbsp;点击:2049&nbsp;/&nbsp;评论:12">提前做好这些准备，cos你就成功了一半！</a></li>
+                        <li><a href="" target="_blank" title="手冢治虫的原稿是《乌龙派出所》两倍以上
+UP:九折坂二人
+发布于2016-09-06 19:27:08&nbsp;/&nbsp;点击:1688&nbsp;/&nbsp;评论:6">手冢治虫的原稿是《乌龙派出所》两倍以上</a></li>
+                    </ul>
+                </li>
+                <li class="tipp">
+                    漫画小说
+                    <ul class="conn" style="display: none">
+                        <li class="has-img">
+                            <a href="" target="_blank" title="那些年外挂毁掉的热门网游
+UP:aw27798203
+发布于2016-09-05 15:02:28&nbsp;/&nbsp;点击:96124&nbsp;/&nbsp;评论:977">
+                                <img src="img/list4.jpg" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+
+                            <b><a href="" target="_blank" title="【漫画】花嫁 第26-30话
+UP: aw18846275
+发布于2016-09-05 15:02:28&nbsp;/&nbsp;点击:96124&nbsp;/&nbsp;评论:977">
+                                【漫画】花嫁 第26-30话
+                                <p>激萌萝莉萌萌哒</p>
+                                <p>UP: aw18846275</p>
+                            </a>
+                            </b>
+                        </li>
+                        <li><a href="" target="_blank" title="【连载】第四章：坠楼的尸体
+UP:刘家奇葩233
+发布于2016-09-07 10:45:56&nbsp;/&nbsp;点击:389&nbsp;/&nbsp;评论:1">【连载】第四章：坠楼的尸体</a></li>
+                        <li><a href="" target="_blank" title="【漫画】后宫婚 第26-30话
+UP:辣鸡AC
+发布于2016-09-06 18:42:58&nbsp;/&nbsp;点击:2091&nbsp;/&nbsp;评论:3">【漫画】后宫婚 第26-30话</a></li>
+                        <li><a href="" target="_blank" title="【漫画】《偶像大师灰姑娘女孩WILD WIND GIRL》05
+UP:欢迎来到acfun
+发布于2016-09-06 14:22:19&nbsp;/&nbsp;点击:1453&nbsp;/&nbsp;评论:6">【漫画】《偶像大师灰姑娘女孩WILD WIND GIRL》05</a></li>
+                        <li><a href="" target="_blank" title="【漫画】妄想高校教员森下 第29话
+UP:辣鸡AC
+发布于2016-09-07 08:51:14&nbsp;/&nbsp;点击:1187&nbsp;/&nbsp;评论:4">【漫画】妄想高校教员森下 第29话</a></li>
+                        <li><a href="" target="_blank" title="【赵石漫画系列】—“十年”
+UP:叨叨哥
+发布于2016-09-06 19:37:59&nbsp;/&nbsp;点击:4536&nbsp;/&nbsp;评论:20">【赵石漫画系列】—“十年”</a></li>
+                        <li><a href="" target="_blank" title="【漫画】恶魔禁域 第15-18话
+UP:辣鸡AC
+发布于2016-09-07 08:48:29&nbsp;/&nbsp;点击:1217&nbsp;/&nbsp;评论:1">【漫画】恶魔禁域 第15-18话</a></li>
+                        <li><a href="" target="_blank" title="一群沉睡中的“大魔王”
+UP:乒乓球视频
+发布于2016-09-07 09:01:43&nbsp;/&nbsp;点击:1558&nbsp;/&nbsp;评论:1">一群沉睡中的“大魔王”</a></li>
+                        <li><a href="" target="_blank" title="【小说】《潜渊》第一卷 起缘 第六缕 扶桑神树
+UP:歸夕
+发布于2016-09-06 20:46:28&nbsp;/&nbsp;点击:1119&nbsp;/&nbsp;评论:2">【小说】《潜渊》第一卷 起缘 第六缕 扶桑神树</a></li>
+                        <li><a href="" target="_blank" title="【漫画】Little 13 第9-10话
+UP:辣鸡AC
+发布于2016-09-06 18:58:16&nbsp;/&nbsp;点击:1378&nbsp;/&nbsp;评论:3">【漫画】Little 13 第9-10话</a></li>
+                        <li><a href="" target="_blank" title="【漫画】愿君勿死 第17-17.5话
+UP:辣鸡AC
+发布于2016-09-06 19:03:20&nbsp;/&nbsp;点击:1551&nbsp;/&nbsp;评论:2">【漫画】愿君勿死 第17-17.5话</a></li>
+                    </ul>
+                </li>
+                <li class="tipp">
+                    游戏
+                    <ul class="conn" style="display: none">
+                        <li class="has-img">
+                            <a href="" target="_blank" title="那些年外挂毁掉的热门网游
+UP:aw27798203
+发布于2016-09-05 15:02:28&nbsp;/&nbsp;点击:96124&nbsp;/&nbsp;评论:977">
+                                <img src="img/list5.png" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+
+                            <b><a href="" target="_blank" title="网游职业者的大学专业
+UP: aw53364895
+发布于2016-09-05 15:02:28&nbsp;/&nbsp;点击:96124&nbsp;/&nbsp;评论:977">
+                                网游职业者的大学专业
+                                <p>干什么的都有啊我的天</p>
+                                <p>UP: aw53364895</p>
+                            </a>
+                            </b>
+                        </li>
+                        <li><a href="" target="_blank" title="刚澄清完又打脸？WE面临挖角 若风爆料引发60E震动
+UP:会计
+发布于2016-09-06 21:06:39&nbsp;/&nbsp;点击:10177&nbsp;/&nbsp;评论:120">刚澄清完又打脸？WE面临挖角 若风爆料引发60E震动</a></li>
+                        <li><a href="" target="_blank" title="《炉石传说》卡牌也能像龙珠一样任意融合啦？脑洞已经突破天际了！
+UP:会计
+发布于2016-09-07 11:47:12&nbsp;/&nbsp;点击:1891&nbsp;/&nbsp;评论:10">《炉石传说》卡牌也能像龙珠一样任意融合啦？脑洞已经突破天际了！</a></li>
+                        <li><a href="" target="_blank" title="7.0 DPS模拟排名：猫德登顶 冰DK垫底
+UP:时空研究飞船Ѯ
+发布于2016-09-06 18:18:42&nbsp;/&nbsp;点击:8988&nbsp;/&nbsp;评论:167">7.0 DPS模拟排名：猫德登顶 冰DK垫底</a></li>
+                        <li><a href="" target="_blank" title="国外游戏杂志10月封面 《地平线：黎明时分》太风骚
+UP:会计
+发布于2016-09-07 11:52:53&nbsp;/&nbsp;点击:1228&nbsp;/&nbsp;评论:4">国外游戏杂志10月封面 《地平线：黎明时分》太风骚</a></li>
+                        <li><a href="" target="_blank" title="《口袋妖怪：太阳/月亮》最新情报 两个世界的秘密 “究极异兽”的威胁
+UP:会计
+发布于2016-09-07 11:49:05&nbsp;/&nbsp;点击:1334&nbsp;/&nbsp;评论:6">《口袋妖怪：太阳/月亮》最新情报 两个世界的秘密 “究极异兽”的威胁</a></li>
+                        <li><a href="" target="_blank" title="小学生该不该被发现？《守望先锋》要公开队友战绩？
+UP:会计
+发布于2016-09-06 21:06:23&nbsp;/&nbsp;点击:10903&nbsp;/&nbsp;评论:189">小学生该不该被发现？《守望先锋》要公开队友战绩？</a></li>
+                        <li><a href="" target="_blank" title="迷之自信！三成日本人认为自己做的游戏更好玩
+UP:羽烈王
+发布于2016-09-07 10:39:39&nbsp;/&nbsp;点击:2039&nbsp;/&nbsp;评论:12">迷之自信！三成日本人认为自己做的游戏更好玩</a></li>
+                        <li><a href="" target="_blank" title="LOL大神自制“恶魔提莫”皮肤 绝对会颠覆你的看法
+UP:会计
+发布于2016-09-07 10:06:00&nbsp;/&nbsp;点击:4115&nbsp;/&nbsp;评论:27">LOL大神自制“恶魔提莫”皮肤 绝对会颠覆你的看法</a></li>
+                        <li><a href="" target="_blank" title="【dota2】二冰仍未点入队确认 iG.V原班四人回归
+UP:绯の夜
+发布于2016-09-07 08:30:55&nbsp;/&nbsp;点击:2585&nbsp;/&nbsp;评论:13">【dota2】二冰仍未点入队确认 iG.V原班四人回归</a></li>
+                        <li><a href="" target="_blank" title="《LOL》厂长又开始说瞎话了：训练赛我们跟三星91开
+UP:会计
+发布于2016-09-06 21:11:08&nbsp;/&nbsp;点击:12124&nbsp;/&nbsp;评论:135">《LOL》厂长又开始说瞎话了：训练赛我们跟三星91开</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="footer">
+            <a href="">
+                查看更多 >
+            </a>
+        </div>
+        <script>
+            window.onload =function change() {
+                var title = document.getElementById('list2').getElementsByClassName('tipp');
+                var body = document.getElementsByClassName('conn');
+                for ( var i = 0; i < title.length; i++) {
+                    title[i].id = i;
+                    title[i].onmouseover = function () {
+                        hover(this.id);
+                    }
+                }
+
+                function hover(nowindex){
+                    for(var j = 0;j<title.length;j++){
+                        if(j == nowindex){
+                            title[j].style.color = '#2ab69d';
+                            title[j].style.borderBottomColor = '#2ab69d';
+                            body[j].style.display = 'block';
+                        }else{
+                            title[j].style.color = 'black';
+                            title[j].style.borderBottomColor = '';
+                            body[j].style.display = 'none';
+                        }
+                    }
+                }
+            }
+        </script>
+    </div>
+</div>
+<div class="section3">
+
+    <div class="left">
+        <div class="header">
+            <img src="img/娱乐.gif" alt="" width="40" height="40" style="float: left"/>
+            <b>娱乐</b>
+            <div class="right" style="float: right">
+                <div class="l">
+                    <p>2016金坷垃收获祭</p>
+                </div>
+                <div class="m">
+                    <p>【FA乐器】草稚京之歌</p>
+                </div>
+                <div class="r">
+                    <p>更多 ></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+
+            <div class="blocktipbig" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_01.gif" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>中国第一“鬼宅“，京城81号之迷！</p>
+                <span>一想到那部著名烂片 真是迷得不行</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_02.JPG" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>益智節目考驗人性弱點，男子出奇招成功贏得獎金</p>
+                <span>UP:夜雨烟云丶</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_03.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>【局座】局座的消失 -BYE END-</p>
+                <span>UP:伈小枫</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_04.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>王霸胆－－中国老师们都说过这些话，你被说中了几句？</p>
+                <span>UP:老美王霸胆</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_05.gif" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>陈一发儿，举报！色情主播！低俗某宝广告！</p>
+                <span>UP:萝菽菽</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_06.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>【百年之美】男性流行明星</p>
+                <span>UP:柚子木字幕组</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_07.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>【大宝剑】玩妹妹系列 想和妹妹一起洗澡…….</p>
+                <span>UP:前阿酱</span>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_08.gif" alt="" width="160" height="90"/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>伟大领袖川普唐——美帝の大救星</p>
+                <span>UP:维尼痞诺曹</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_09.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>国外男子被熊孩子一直用手推车撞，忍无可忍给了他终身难忘的教训</p>
+                <span>UP:爆笑小分队</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_10.gif" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>【第一次和异性睡觉你在想什么？】【生活、娱乐】【720P】</p>
+                <span>UP:君檬lemon</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_11.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>【疯狂粤语】走进大学城，过气网红体验poor guy大学生活</p>
+                <span>UP:一本正经工作室</span>
+            </div>
+            <div class="blocktip" style="float: left">
+                <div class="pic">
+                    <img src="img/s3_12.jpg" alt=""/>
+                    <div class="shadow">
+                    </div>
+                </div>
+                <p>【布朗尼甜点】甜点@nzcool.cn</p>
+                <span>UP:nzcool</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+
+        <div class="title">
+            <h3><a href="">娱乐排行榜</a></h3>
+        </div>
+        <div class="block">
+            <ul id="paihang">
+                <li class="stage" style="color: #fd4c5b ;background-color: rgba(253,76,91,0.1)">
+                    周榜
+                    <ul class="control" style="display: block">
+                        <li class="has-img">
+                            <span><i>1</i></span>
+                            <a href="">
+                                <img src="img/right04.gif" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+                            <b>
+                                <a href="">
+                                    gif动态图 福利不多第五十三期
+                                    <p>UP: 失恋的拖鞋</p>
+                                </a>
+                            </b>
+                        </li>
+                        <li class="has-img">
+                            <span><i>2</i></span>
+                            <a href="">
+                                <img src="img/right05.jpg" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+                            <b>
+                                <a href="">
+                                    易中天开讲被一个学生质疑，看他如何巧妙机智回应。
+                                    <p>UP: 关注撸主三十年</p>
+                                </a>
+                            </b>
+                        </li>
+                        <li class="has-img">
+                            <span><i>3</i></span>
+                            <a href="">
+                                <img src="img/right06.gif" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+                            <b>
+                                <a href="">
+                                    贝爷求放过！贝尔拎着蛇追得备用粮食迪昂·桑德斯在野外狂跑
+                                    <p>UP: 后知后觉小石头</p>
+                                </a>
+                            </b>
+                        </li>
+                        <li>
+                            <span><i>4</i></span>
+                            <a href="" title="2016年9月第1周碉堡傻缺视频合辑
+UP:关注撸主三十年
+发布于2016-09-03 11:47:22&nbsp;/&nbsp;点击：28万&nbsp;/&nbsp;评论：157" target="_blank">2016年9月第1周碉堡傻缺视频合辑</a>
+                        </li>
+                        <li>
+                            <span><i>5</i></span>
+                            <a href="/v/ac3082936" title="本来以为在虐狗。。。没想到最后。。。我只想人肉这只狗
+UP:爆笑小分队
+发布于2016-09-06 13:20:08&nbsp;/&nbsp;点击：27.9万&nbsp;/&nbsp;评论：211" target="_blank">本来以为在虐狗。。。没想到最后。。。我只想人肉这只狗</a>
+                        </li>
+                        <li>
+                            <span><i>6</i></span>
+                            <a href="/v/ac3078866" title="感受一下离死神的距离刚好是1秒的长短
+UP:大白话
+发布于2016-09-04 23:32:00&nbsp;/&nbsp;点击：26.2万&nbsp;/&nbsp;评论：177" target="_blank">感受一下离死神的距离刚好是1秒的长短</a>
+                        </li>
+                        <li>
+                            <span><i>7</i></span>
+                            <a href="/v/ac3090290" title="【暴走大事件第四季】60 铁柱三分钟流利英语教学，用电大户杨永信终将面临正义
+UP:暴走漫画
+发布于2016-09-09 00:41:11&nbsp;/&nbsp;点击：25.1万&nbsp;/&nbsp;评论：645" target="_blank">【暴走大事件第四季】60 铁柱三分钟流利英语教学，用电大户杨永信终将面临正义</a>
+                        </li>
+                        <li>
+                            <span><i>8</i></span>
+                            <a href="/v/ac3079557" title="你一定感受过夜晚往学校宿舍窗外大喊一声后是什么效果
+UP:旧记忆要往后退
+发布于2016-09-05 10:31:22&nbsp;/&nbsp;点击：24.4万&nbsp;/&nbsp;评论：367" target="_blank">你一定感受过夜晚往学校宿舍窗外大喊一声后是什么效果</a>
+                        </li>
+                        <li>
+                            <span><i>9</i></span>
+                            <a href="/v/ac3081255" title="女高中生在计程车上演唱《小幸运》，开口几秒就让司机大喊「载到你太幸运了」！
+UP:弱女子
+发布于2016-09-05 20:35:59&nbsp;/&nbsp;点击：23.5万&nbsp;/&nbsp;评论：313" target="_blank">女高中生在计程车上演唱《小幸运》，开口几秒就让司机大喊「载到你太幸运了」！</a>
+                        </li>
+                        <li>
+                            <span><i>10</i></span>
+                            <a href="/v/ac3083729" title="于谦老师首次打破沉默谈论曹云金
+UP:迷恋丝袜的阿喵
+发布于2016-09-06 18:07:46&nbsp;/&nbsp;点击：23万&nbsp;/&nbsp;评论：446" target="_blank">于谦老师首次打破沉默谈论曹云金</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="stage">
+                    日榜
+                    <ul class="control" style="display: none">
+                        <li class="has-img">
+                            <span><i>1</i></span>
+                            <a href="">
+                                <img src="img/right01.jpg" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+                            <b>
+                                <a href="">
+                                国外男子被熊孩子一直用手
+                                <p>UP: 爆笑小分队</p>
+                                </a>
+                            </b>
+                        </li>
+                        <li class="has-img">
+                            <span><i>2</i></span>
+                            <a href="">
+                                <img src="img/right02.jpg" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+                            <b>
+                                <a href="">
+                                    【撒贝宁】您好，您已被今日
+                                    <p>UP: 一个可丽饼</p>
+                                </a>
+                            </b>
+                        </li>
+                        <li class="has-img">
+                            <span><i>3</i></span>
+                            <a href="">
+                                <img src="img/right03.jpg" alt="" height="50" width="90" style="display: inline"/>
+                            </a>
+                            <b>
+                                <a href="">
+                                    薛之谦黑历史，笑死了，逗
+                                    <p>UP: 万恶之源就是我</p>
+                                </a>
+                            </b>
+                        </li>
+                        <li>
+                            <span><i>4</i></span>
+                            <a href="" title="白莲勿入，95后都在想些啥？
+UP:拜托啦学妹
+发布于2016-09-09 11:08:07&nbsp;/&nbsp;点击：41144&nbsp;/&nbsp;评论：60" target="_blank">白莲勿入，95后都在想些啥？</a>
+                        </li>
+                        <li>
+                            <span><i>5</i></span>
+                            <a href="" title="益智節目考驗人性弱點，男子出奇招成功贏得獎金 (中文字幕)
+UP:夜雨烟云丶
+发布于2016-09-09 14:03:47&nbsp;/&nbsp;点击：38308&nbsp;/&nbsp;评论：124" target="_blank">益智節目考驗人性弱點，男子出奇招成功贏得獎金 (中文字幕)</a>
+                        </li>
+                        <li>
+                            <span><i>6</i></span>
+                            <a href="" title="能让爷爷奶奶留鼻血的舞蹈
+UP:提线木偶273318
+发布于2016-09-09 12:34:27&nbsp;/&nbsp;点击：33057&nbsp;/&nbsp;评论：24" target="_blank">能让爷爷奶奶留鼻血的舞蹈</a>
+                        </li>
+                        <li>
+                            <span><i>7</i></span>
+                            <a href="" title="中国第一“鬼宅“，京城81号之迷！
+UP:老烟斗鬼故事
+发布于2016-09-09 16:23:40&nbsp;/&nbsp;点击：27026&nbsp;/&nbsp;评论：74" target="_blank">中国第一“鬼宅“，京城81号之迷！</a>
+                        </li>
+                        <li>
+                            <span><i>8</i></span>
+                            <a href="" title="【看完这个，你肯定也想生个女儿！】【生活、娱乐】
+UP:君檬lemon
+发布于2016-09-09 16:35:53&nbsp;/&nbsp;点击：23516&nbsp;/&nbsp;评论：28" target="_blank">【看完这个，你肯定也想生个女儿！】【生活、娱乐】</a>
+                        </li>
+                        <li>
+                            <span><i>9</i></span>
+                            <a href="" title="世界上最令人满意的视频2016，看了浑身舒服
+UP:青蓝紫
+发布于2016-09-09 15:46:29&nbsp;/&nbsp;点击：23220&nbsp;/&nbsp;评论：8" target="_blank">世界上最令人满意的视频2016，看了浑身舒服</a>
+                        </li>
+                        <li>
+                            <span><i>10</i></span>
+                            <a href="" title="【大宝剑】玩妹妹系列 想和妹妹一起洗澡…….
+UP:前阿酱
+发布于2016-09-09 15:11:52&nbsp;/&nbsp;点击：18868&nbsp;/&nbsp;评论：14" target="_blank">【大宝剑】玩妹妹系列 想和妹妹一起洗澡…….</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <a href="">
+                查看完整榜单 >
+            </a>
+        </div>
+
+    </div>
+    <script>
+        function change1(){
+            var title1 = document.getElementById('paihang').getElementsByClassName('stage');
+            var body1 = document.getElementsByClassName('control');
+            for ( var i = 0; i < title1.length; i++) {
+                title1[i].id = i;
+                title1[i].onclick = function () {
+                    ful(this.id);
+                }
+            }
+
+            function ful(a){
+                for(var j = 0;j<title1.length;j++){
+                    if(j == a){
+                        body1[j].style.display = 'block';
+                        title1[j].style.color = '#fd4c5b';
+                        title1[j].style.backgroundColor = 'rgba(253,76,91,0.1)';
+                    }else{
+                        body1[j].style.display = 'none';
+                        title1[j].style.color = '';
+                        title1[j].style.backgroundColor = '';
+                    }
+                }
+            }
+        }
+        change1();
+    </script>
+</div>
+<div class="section4">
+    <div class="left">
+        <div class="header">
+            <img src="img/番剧.gif" alt="" width="40" height="40" style="float: left"/>
+            <b>番剧</b>
+            <div class="right" style="float: right">
+                    <p>更多 ></p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="timeblock">
+                <h6>周一</h6>
+                <ul>
+                    <li class="has-img">
+                        <a href="" target="_blank">
+                            <img src="img/s4_01.jpg" style="display: inline;" width="124" height="70">
+                        </a>
+                        <a href="" target="_blank">
+                            <b>超时空要塞Δ</b>
+                        </a>
+                        <p>第23话</p>
+                    </li>
+                    <li><a href="" target="_blank"><b>枪弹辩驳3 未来篇</b><p>第9话</p></a></li>
+                    <li><a href="" target="_blank"><b>RWBY CHIBI 第一季</b><p>第17话</p></a></li>
+                </ul>
+            </div>
+            <div class="timeblock">
+                <h6>周二</h6>
+                <ul>
+                    <li class="has-img">
+                        <a href="" target="_blank">
+                            <img src="img/s4_02.jpg" style="display: inline;" width="124" height="70">
+                        </a>
+                        <a href="" target="_blank">
+                            <b>路人超能100</b>
+                        </a>
+                        <p>第9话</p>
+                    </li>
+                    <li><a href="" target="_blank"><b>凹凸世界</b><p>第13话</p></a></li>
+                    <li><a href="" target="_blank"><b>霸旋陀螺 第三代</b><p>第22话</p></a></li>
+                </ul>
+            </div>
+            <div class="timeblock">
+                <h6>周三</h6>
+                <ul>
+                    <li class="has-img">
+                        <a href="" target="_blank">
+                            <img src="img/s4_03.jpg" style="display: inline;" width="124" height="70">
+                        </a>
+                        <a href="" target="_blank">
+                            <b>New Game</b>
+                        </a>
+                        <p>第10话</p>
+                    </li>
+                    <li><a href="" target="_blank"><b>口水三国</b><p>第94话</p></a></li>
+                    <li><a href="" target="_blank"><b>月歌</b><p>第10话</p></a></li>
+                    <li><a href="" target="_blank"><b>求求你，吃我吧</b><p>第42话</p></a></li>
+                    <li><a href="" target="_blank"><b>半面人</b><p>第12话</p></a></li>
+                </ul>
+            </div>
+            <div class="timeblock">
+                <h6>周四</h6>
+                <ul>
+                    <li class="has-img">
+                        <a href="" target="_blank">
+                            <img src="img/s4_04.jpg" style="display: inline;" width="124" height="70">
+                        </a>
+                        <a href="" target="_blank">
+                            <b>秦时明月之君临天下</b>
+                        </a>
+                        <p>第45话</p>
+                    </li>
+                    <li><a href="" target="_blank"><b>画江湖之不良人 第二季</b><p>第8话</p></a></li>
+                    <li><a href="" target="_blank"><b>灵域 第三季</b><p>第5话</p></a></li>
+                    <li><a href="" target="_blank"><b>墓王之王 麒麟决</b><p>第8话</p></a></li>
+                    <li><a href="" target="_blank"><b>疯味英雄</b><p>第11话</p></a></li>
+                </ul>
+            </div>
+            <div class="timeblock">
+                <h6>周五</h6>
+                <ul>
+                    <li class="has-img">
+                        <a href="" target="_blank">
+                            <img src="img/s4_05.jpg" style="display: inline;" width="124" height="70">
+                        </a>
+                        <a href="" target="_blank">
+                            <b>这个美术社大有问题</b>
+                        </a>
+                        <p class="red-style">•&nbsp;第10话</p>
+                    </li>
+                    <li><a href="" target="_blank"><b>枪弹辩驳3 绝望篇</b><p class="red-style">•&nbsp;第9话</p></a></li>
+                    <li><a href="" target="_blank"><b>镇魂街</b><p class="red-style">•&nbsp;第18话</p></a></li>
+                    <li><a href="" target="_blank"><b>口水封神</b><p class="red-style">•&nbsp;第12话</p></a></li>
+                    <li><a href="" target="_blank"><b>超神学院之黑甲</b><p>第9话</p></a></li>
+                    <li><a href="" target="_blank"><b>美男高校地球防卫部LOVE!LOVE! </b><p>第9话</p></a></li>
+                    <li><a href="" target="_blank"><b>狐妖小红娘</b><p>第38话</p></a></li>
+                </ul>
+            </div>
+            <div class="timeblock" style="background: rgba(253,76,91,0.1)">
+                <h6 style="    background: #fd4c5d">周六</h6>
+                <ul>
+                    <li class="has-img">
+                        <a href="" target="_blank">
+                            <img src="img/s4_06.jpg" style="display: inline;" width="124" height="70">
+                        </a>
+                        <a href="" target="_blank">
+                            <b>怪物弹珠</b>
+                        </a>
+                        <p>第38话</p>
+                    </li>
+                    <li><a href="" target="_blank"><b>发条精灵战记</b><p>第9话 </p></a></li>
+                    <li><a href="" target="_blank"><b>逆转裁判</b><p>第21话</p></a></li>
+                    <li><a href="" target="_blank"><b>初恋怪兽</b><p>第9话</p></a></li>
+                </ul>
+            </div>
+            <div class="timeblock" style="border-right: none">
+                <h6>周日</h6>
+                <ul>
+                    <li class="has-img">
+                        <a href="" target="_blank">
+                            <img src="img/s4_07.jpg" style="display: inline;" width="124" height="70">
+                        </a>
+                        <a href="" target="_blank">
+                            <b>DAYS</b>
+                        </a>
+                        <p>第10话</p>
+                    </li>
+                    <li><a href="" target="_blank"><b>热诚传说X</b><p>第9话</p></a></li>
+                    <li><a href="" target="_blank"><b>滑子菇 全世界的小伙伴</b><p>第12话</p></a></li>
+                    <li><a href="" target="_blank"><b>亚尔斯兰战记II</b><p>第8话</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="header">
+            <h3>本季安利</h3>
+        </div>
+        <div class="pic-box">
+            <img src="img/s4_r1.png" alt=""/>
+        </div>
+        <div class="pic-box">
+            <img src="img/s4_r2.png" alt=""/>
+        </div>
+        <div class="pic-box">
+            <img src="img/s4_r3.png" alt=""/>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class="block">
+
+        <div class="top">
+            <div class="list1">
+                <h5>合作</h5>
+                <p>
+                    <a href="" target="_blank">关于我们</a>
+                    <a href="" target="_blank" class="mr0">联系我们</a>
+                    <br>
+                    <a href="" target="_blank">AC招聘</a>
+                </p>
+            </div>
+            <div class="list2">
+                <h5>官方</h5>
+                <p>
+                    <a href="" target="_blank">新浪微博</a>
+                </p>
+            </div>
+            <div class="list3">
+                <h5>下载</h5>
+                <p>
+                    <a href="" target="_blank" class="mr0">移动客户端</a>
+                    <span class="new">new</span>
+                    <br>
+                    <a href="" target="_blank" class="mr0">AC娘表情包</a>
+                </p>
+            </div>
+            <div class="list4">
+                <h5>友情链接</h5>
+                <p>
+                    <a href="" target="_blank">斗鱼直播</a>
+                    <a href="" target="_blank">匿名版</a>
+                    <a href="" target="_blank" class="mr0">AC大逃杀</a>
+                </p>
+            </div>
+            <div class="list5">
+                <h5>反馈</h5>
+                <p>
+                    <a href="" target="_blank">意见反馈</a>
+                    <a href="" target="_blank">举报</a>
+                    <a href="" target="_blank">帮助中心</a>
+                    <br>
+                    <a href="" target="_blank">免责声明</a>
+                    <a href="" target="_blank">用户协议</a>
+                </p>
+            </div>
+            <div class="list6">
+                <img src="img/14.png" alt="" width="70" height="61"/>
+            </div>
+        </div>
+        <div class="link">
+            <div class="item-link1">
+                <a href="" target="_blank">中国互联网举报中心</a>
+                <br>
+                <span>网络文化经营单位</span>
+            </div>
+            <div class="item-link2">
+                <span>京ICP备15067359号</span>
+                <br>
+                <a href="" target="_blank">北京互联网举报中心</a>
+                <br>
+                <a href="" target="_blank">北京12318文化市场举报热线</a>
+            </div>
+            <div class="item-link3">
+                <span>节目制作经营许可证（京）字第05158号</span>
+                <br>
+                <a href="" target="_blank">网络110报警服务</a>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="">
+                <img src="img/logo-gray.png" width="78" height="24">
+            </a>
+            <p>本站不提供任何视听上传服务，所有内容均来自视频分享站点所提供的公开引用资源。Copyright © 2007-2016 AcFun. 保留所有权利</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+.header-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 46px;
+    font-size: 12px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+.top-con{
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-con .logo{
+    float: left;
+}
+.top-con .logo a{
+    display: block;
+    height: 27px;
+    padding: 8px 0 12px;
+    margin-right: 12px;
+}
+.top-con .header-guide{
+    float: right;
+}
+.top-con .header-guide li{
+    list-style: none;
+    float: right;
+    padding: 10px 10px;
+    display: block;
+    height: 26px;
+}
+.top-con .header-guide li i{
+    font-size: 22px;
+    color: #909699;
+    display: block;
+}
+.top-con .header-guide li i:hover{
+    color: #fd4c5d;
+}
+.top-con .header-guide .li2{
+    position: relative;
+    z-index: 999;
+}
+.top-con .header-guide .li2 .sub{
+    position: absolute;
+    top: 42px;
+    left: 0;
+    text-align: left;
+    background: #fff;
+    width: 100px;
+    height: 80px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    font-size: 12px;
+    display: none;
+    border-radius: 0 0 3px 3px;
+}
+.top-con .header-guide .li2 .sub span{
+     font-family: 微软雅黑;
+     font-size: 12px;
+     font-style: normal;
+     top: 20px;
+    position: absolute;
+    padding-left: 10px;
+ }
+.top-con .header-guide .li2 .sub span:hover{
+    color: #fd4c5d;
+}
+.top-con .header-guide .li2 .sub p{
+    font-family: 微软雅黑;
+    font-size: 12px;
+    font-style: normal;
+    top: 50px;
+    position: absolute;
+    padding-left: 10px;
+}
+.top-con .header-guide .li2 .sub p:hover{
+    color: #fd4c5d;
+}
+.top-con .header-guide .li2:hover .sub{
+    display: block;
+}
+
+
+.top-con .header-guide .li3{
+    position: relative;
+    z-index: 999;
+}
+.top-con .header-guide .li3 .sub{
+    position: absolute;
+    top: 42px;
+    left: 0;
+    text-align: left;
+    background: #fff;
+    width: 210px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    font-size: 12px;
+    display: none;
+    border-radius: 0 0 3px 3px;
+}
+.top-con .header-guide .li3 .sub span{
+    font-family: 微软雅黑;
+    text-align: center;
+    padding-left: 10px;
+    top: 15px;
+    position: absolute;
+}
+.top-con .header-guide .li3 .sub h3{
+    color: #555;
+    height: 36px;
+    line-height: 36px;
+    display: block;
+    text-align: center;
+    background: #f7f7f7;
+    margin-top: 50px;
+    font-family: 微软雅黑;
+    font-size: 12px;
+}
+.top-con .header-guide .li3 .sub h3:hover{
+    background: #E4E4E4;
+}
+.top-con .header-guide .li3:hover .sub{
+    display: block;
+}
+
+
+
+
+
+.top-con .header-guide2{
+    float: right;
+}
+.top-con .header-guide2 li{
+    list-style: none;
+    float: right;
+    padding: 15px 10px;
+    display: block;
+    height: 21px;
+}
+.top-con .header-guide2 li span{
+    font-family: 微软雅黑;
+    font-size: 12px;
+}
+.top-con .header-guide2 .li2{
+    position: relative;
+    display: block;
+}
+.top-con .header-guide2 .li2 .sub{
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 46px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    left: 0;
+    border-radius: 0 0 3px 3px;
+}
+.top-con .header-guide2 .li2:hover .sub{
+    display: block;
+}
+.top-con .header-guide2 li span:hover{
+    color: #fd4c5d;
+}
+.top-con .header-guide2 li i{
+    color: #fd4c5d;
+}
+
+
+
+
+
+
+.top-con .header-guide3{
+    float: right;
+    display: inline-block;
+    position: absolute;
+    height: 32px;
+    top: 7px;
+    left: 50%;
+    margin-left: -181px;
+    width: 362px;
+}
+.top-con .header-guide3 .search{
+    border: 1px solid #e5e5e5;
+    border-right: none;
+    padding: 8px 10px;
+    height: 32px;
+    line-height: 14px;
+    border-radius: 3px 0 0 3px;
+    width: 316px;
+    vertical-align: top;
+    color: #999;
+    box-sizing: border-box;
+    font-family: 微软雅黑;
+}
+.top-con .header-guide3 .search2{
+    border: none;
+    width: 46px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    vertical-align: top;
+    background: #fd4c5d;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    text-align: center;
+}
+.top-con .header-guide3 .search2:hover{
+    background:#EB4556;
+}

@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+
+/*
+.guide{
+    z-index: 9;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+.guide .block{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1160px;
+    height: 46px;
+}
+.guide .block a:hover li{
+    color: #fd4c5d;
+}
+.guide .block li{
+    float: left;
+    list-style: none;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: black;
+
+
+}
+.guide .block .tip3{
+    float: right;
+    text-align: center;
+    width: 80px;
+    height: 46px;
+}
+.guide .block .tip1{
+    text-align: center;
+    width: 40px;
+    height: 43px;
+    border-bottom: 3px solid #fd4c5d;
+    color: #fd4c5d;
+
+}
+.guide .block .tip2{
+    text-align: center;
+    width: 70px;
+    height: 46px;
+    left: 10px;
+    right: 10px;
+}
+.guide .block .tip{
+    text-align: center;
+    width: 70px;
+    height: 46px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    line-height: 46px;
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    color: black;
+}
+.guide .block .tip .con{
+    width: 100%;
+    left: 0;
+    background-color: white;
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    display: none;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+    border-top: 1px solid #e5e5e5;
+    border-radius: 0 0 3px 3px;
+    color: black;
+}
+.guide .block .tip .con li{
+    font-size: 14px;
+    list-style: none;
+    font-family: 微软雅黑;
+    line-height: 40px;
+    padding-left: 50px;
+    position: relative;
+    display: block;
+}
+
+*/
+.guide{
+    z-index: 9;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+.guide .block{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1160px;
+    height: 46px;
+}
+.guide .block li{
+    float: left;
+    list-style: none;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: black;
+}
+.guide .block .tip1{
+    text-align: center;
+    width: 40px;
+    height: 43px;
+    border-bottom: 3px solid #fd4c5d;
+    color: #fd4c5d;
+
+}
+.guide .block .tip2{
+    text-align: center;
+    width: 70px;
+    height: 46px;
+    left: 10px;
+    right: 10px;
+}
+.guide .block .tip2:hover{
+    color: #fd4c5d;
+}
+.guide .block .tip3{
+    float: right;
+    text-align: center;
+    width: 80px;
+    height: 46px;
+}
+.guide .block .tip3:hover{
+    color: #fd4c5d;
+}
+.guide .block .tip{
+    text-align: center;
+    width: 70px;
+    height: 46px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    line-height: 46px;
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    color: black;
+}
+.guide .block .tip span{
+    color: black;
+}
+.guide .block .tip:hover span{
+    color: #fd4c5d;
+}
+
+.guide .block .tip .con{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    display: none;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+    border-top: 1px solid #e5e5e5;
+    border-radius: 0 0 3px 3px;
+    color: black;
+    left: 0;
+}
+.guide .block .tip .con ul{
+   padding-left: 300px;
+    text-align: center;
+}
+.guide .block .tip .con li{
+    padding-left: 70px;
+    color: black;
+}
+.guide .block .tip .con li:hover{
+    color: #fd4c5d;
+}
+.guide .block .tip:hover .con{
+    display: block;
+}

@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+.footer-bottom{
+    padding: 20px 0;
+    background-color: #ececec;
+    font-size: 12px;
+}
+.footer-bottom .block{
+    width: 1160px;
+    height: 259px;
+    margin: 0 auto;
+}
+
+
+.footer-bottom .block .top{
+    width: 1160px;
+    height: 86px;
+}
+.footer-bottom .block .top div{
+    float: left;
+    height: 86px;
+    line-height: 28px;
+    border-right: 1px solid #e5e5e5;
+    padding: 0 36px;
+}
+.footer-bottom .block .top div a{
+    color: #333;
+    margin-right: 24px;
+    display: inline-block;
+    font-family: 微软雅黑;
+}
+.footer-bottom .block .top div h5{
+    line-height: 30px;
+    color: #b5b5b5;
+    font-weight: normal;
+}
+
+.footer-bottom .block .top div .new{
+    background: #fd4c5d;
+    color: #fff;
+    width: 28px;
+    height: 12px;
+    line-height: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    font-family: 微软雅黑;
+}
+
+.footer-bottom .block .top .list1{
+    padding-left: 0;
+}
+.footer-bottom .block .top .list6{
+    padding: 0px;
+    border: none;
+    position: relative;
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+.footer-bottom .block .top .list6 img{
+    vertical-align: middle;
+}
+
+.footer-bottom .block .top .mr0 {
+    margin-right: 0 !important;
+}
+
+
+
+
+.footer-bottom .block .link{
+    margin-top: 20px;
+    width: 1160px;
+    height: 72px;
+}
+.footer-bottom .block .link  div {
+    float: left;
+    width: 169px;
+    padding-left: 48px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #999;
+}
+.footer-bottom .block .link .item-link1 {
+    padding-left: 0;
+}
+.footer-bottom .block .link .item-link2{
+    height: 72px;
+}
+.footer-bottom .block .link .item-link3 {
+    width: auto;
+}
+.footer-bottom .block .link span{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    color: #999;
+    vertical-align: baseline;
+    font-family: 微软雅黑;
+}
+.footer-bottom .block .link a {
+    color: #999;
+    font-family: 微软雅黑;
+}
+
+
+
+.footer-bottom .bottom{
+    width: 1160px;
+    height: 53px;
+    text-align: center;
+    margin-top: 20px;
+    color: #b5b5b5;
+}
+.footer-bottom .bottom img{
+    margin-bottom: 10px;
+}
+
+
+

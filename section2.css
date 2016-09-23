@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+.section2{
+    width: 1160px;
+    height: 460px;
+    position: relative;
+    margin: 36px auto;
+    clear: both;
+}
+.section2 .left{
+    width: 880px;
+    float: left;
+}
+.section2 .right{
+    width: 260px;
+    float: right;
+}
+
+
+
+
+.section2 .left .header{
+    width: 880px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.section2 .left .header b{
+    font-size: 18px;
+    font-weight: bold;
+    color: #122;
+    float: left;
+    line-height: 40px;
+    display: inline-block;
+    margin: 0px 16px;
+    font-family: 微软雅黑;
+}
+.section2 .left .header span{
+    color: #999;
+    float: left;
+    line-height: 40px;
+    font-size: 12px;
+    display: inline-block;
+    font-family: 微软雅黑;
+}
+.section2 .left .header .right{
+    width: 93px;
+    height: 24px;
+    margin-top: 10px;
+}
+.section2 .left .header .right .day{
+    width: 46px;
+    height: 24px;
+    float: left;
+    text-indent: 12px;
+    background: rgba(253,76,91,0.1);
+    color: #fd4c5b;
+    cursor: pointer;
+}
+.section2 .left .header .right .day p{
+    border-color: #fae7e8;
+}
+
+.section2 .left .header .right .weekend{
+    width: 46px;
+    float: right;
+    height: 24px;
+    text-indent: 12px;
+    cursor: pointer;
+}
+
+.section2 .left .header .right .day p{
+    line-height: 24px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+
+}
+.section2 .left .header .right .weekend p{
+    line-height: 24px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+}
+
+
+
+
+
+
+
+.section2 .left .block{
+    height: 308px;
+    width: 900px;
+}
+.section2 .left .block .blocktip{
+    width: 160px;
+    height: 130px;
+    margin: 0 20px 10px 0;
+    overflow: hidden;
+}
+.section2 .left .block .blocktip .pic{
+    cursor: pointer;
+    width: 160px;
+    height: 90px;
+}
+.section2 .left .block .blocktip .pic img{
+    border-radius: 3px;
+}
+.section2 .left .block .blocktip .shadow{
+    background: rgba(0,0,0,0.7);
+    width: 160px;
+    height: 90px;
+    border-radius: 3px;
+    z-index: 999;
+    display: none;
+    position: relative;
+    top: -93px;
+}
+.section2 .left .block .blocktip .pic:hover .shadow{
+    display: block;
+
+}
+.section2 .left .block .blocktip p{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    line-height: 18px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.section2 .left .block .blocktip span{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #999;
+    cursor: pointer;
+}
+.section2 .left .block .blocktip p:hover{
+    color: #fd4c5d;
+}
+.section2 .left .block .blocktip span:hover{
+    color: #fd4c5d;
+}
+
+
+.section2 .left .bottom{
+    overflow: hidden;
+}
+.section2 .left .bottom img{
+    border-radius: 3px;
+}
+
+
+
+
+
+.section2 .right .header{
+    font-size: 20px;
+    padding: 0;
+    font-weight: bold;
+}
+.section2 .right .header b{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 0px 16px;
+    color: #333;
+    font-family: 微软雅黑;
+}
+
+
+
+
+
+
+.section2 .right .block{
+    width: 260px;
+}
+.section2 .right .block #list2{
+    width: 260px;
+    height: 30px;
+    text-align: center;
+}
+.section2 .right .block .tipp{
+    height: 28px;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    list-style: none;
+    float: left;
+    line-height: 28px;
+    display: inline-block;
+    padding: 4px 6px 0px 6px;
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #f1f2f3;
+    cursor: pointer;
+}
+.section2 .right .block .tipp .conn {
+    margin-top: 10px;
+    width: 260px;
+    height: 358px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    left: 900px;
+}
+.section2 .right .block .tipp .conn li{
+    font-size: 12px;
+    text-align: left;
+    list-style: none;
+
+}
+.section2 .right .block .tipp .conn li a{
+    color: black;
+}
+.section2 .right .block .tipp .conn li a:hover{
+    color: #2ab69d;
+}
+
+
+
+
+.section2 .right .block .tipp .conn .has-img{
+    height: 50px;
+    margin-bottom: 8px;
+   overflow: hidden;
+
+}
+.section2 .right .block .tipp .conn .has-img img{
+    border-radius: 3px;
+}
+
+.section2 .right .block .tipp .conn .has-img b{
+    line-height: 18px;
+    height: 17px;
+    overflow: hidden;
+    font-weight: normal;
+    padding-left: 20px;
+}
+.section2 .right .block .tipp .conn .has-img b a{
+    font-size: 12px;
+    margin-top: -3px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.section2 .right .block .tipp .conn .has-img b a p{
+    color: #999;
+}
+
+
+
+
+
+
+
+
+.section2 .right .footer{
+    line-height: 28px;
+    text-align: center;
+    display: block;
+    height: 28px;
+    width: 260px;
+    bottom: 0;
+    margin-top: 358px;
+}
+.section2 .right .footer a{
+    display: block;
+    background: #eee;
+    color: #333;
+    border-radius: 3px;
+    font-family: 微软雅黑;
+    font-size: 12px;
+}
+.section2 .right .footer a:hover {
+    background: #e4e4e4;
+}
+
+
+
+
+

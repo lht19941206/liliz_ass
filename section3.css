@@ -1,0 +1,424 @@
+@charset "utf-8";
+
+.section3{
+    width: 1160px;
+    height: 480px;
+    position: relative;
+    margin: 36px auto;
+    clear: both;
+}
+.section3 .left{
+    width: 880px;
+    float: left;
+}
+.section3 .right{
+    width: 260px;
+    float: right;
+}
+
+
+
+
+
+
+.section3 .left .header{
+    width: 880px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.section3 .left .header b{
+    font-size: 18px;
+    font-weight: bold;
+    color: #122;
+    float: left;
+    line-height: 40px;
+    display: inline-block;
+    margin: 0px 16px;
+    font-family: 微软雅黑;
+}
+.section3 .left .header span{
+    color: #999;
+    float: left;
+    line-height: 40px;
+    font-size: 12px;
+    display: inline-block;
+    font-family: 微软雅黑;
+}
+.section3 .left .header .right{
+    width: 310px;
+    height: 24px;
+    margin-top: 10px;
+}
+.section3 .left .header .right .l{
+    width: 120px;
+    height: 24px;
+    float: left;
+    text-indent: 12px;
+    cursor: pointer;
+}
+
+.section3 .left .header .right .m{
+    width: 140px;
+    float: left;
+    height: 24px;
+    text-indent: 12px;
+    cursor: pointer;
+}
+.section3 .left .header .right .r{
+    width: 50px;
+    float: right;
+    height: 24px;
+    text-indent: 12px;
+    cursor: pointer;
+    color: #fd4c5d;
+}
+
+.section3 .left .header .right  p{
+    line-height: 24px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+}
+.section3 .left .header .right  p:hover{
+    color: #fd4c5d;
+}
+
+
+
+
+
+.section3 .left .block{
+    height: 308px;
+    width: 900px;
+}
+.section3 .left .block .blocktip{
+    width: 160px;
+    height: 140px;
+    margin: 0 20px 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.section3 .left .block .blocktipbig{
+    width: 340px;
+    height: 280px;
+    margin: 0 20px 10px 0;
+    overflow: hidden;
+}
+.section3 .left .block .blocktipbig .pic{
+    cursor: pointer;
+    width: 340px;
+    height: 240px;
+}
+.section3 .left .block .blocktipbig .pic img{
+    border-radius: 3px;
+}
+.section3 .left .block .blocktipbig .shadow{
+    background: rgba(0,0,0,0.7);
+    width: 340px;
+    height: 240px;
+    border-radius: 3px;
+    z-index: 999;
+    display: none;
+    position: relative;
+    top: -243px;
+}
+.section3 .left .block .blocktipbig .pic:hover .shadow{
+    display: block;
+
+}
+.section3 .left .block .blocktipbig p{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    line-height: 18px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.section3 .left .block .blocktipbig span{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #999;
+    cursor: pointer;
+}
+.section3 .left .block .blocktipbig p:hover{
+    color: #fd4c5d;
+}
+.section3 .left .block .blocktipbig span:hover{
+    color: #fd4c5d;
+}
+
+
+
+.section3 .left .block .blocktip .pic{
+    cursor: pointer;
+    width: 160px;
+    height: 90px;
+}
+.section3 .left .block .blocktip .pic img{
+    border-radius: 3px;
+}
+.section3 .left .block .blocktip .shadow{
+    background: rgba(0,0,0,0.7);
+    width: 160px;
+    height: 90px;
+    border-radius: 3px;
+    z-index: 999;
+    display: none;
+    position: relative;
+    top: -93px;
+}
+.section3 .left .block .blocktip .pic:hover .shadow{
+    display: block;
+
+}
+.section3 .left .block .blocktip p{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    line-height: 18px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.section3 .left .block .blocktip span{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #999;
+    cursor: pointer;
+}
+.section3 .left .block .blocktip p:hover{
+    color: #fd4c5d;
+}
+.section3 .left .block .blocktip span:hover{
+    color: #fd4c5d;
+}
+
+
+
+
+
+
+
+
+.section3 .left .bottom{
+    height: 140px;
+    width: 900px;
+}
+.section3 .left .bottom .blocktip{
+    width: 160px;
+    height: 130px;
+    margin: 0 20px 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.section3 .left .bottom .blocktip .pic{
+    cursor: pointer;
+    width: 160px;
+    height: 90px;
+}
+.section3 .left .bottom .blocktip .pic img{
+    border-radius: 3px;
+}
+.section3 .left .bottom .blocktip .shadow{
+    background: rgba(0,0,0,0.7);
+    width: 160px;
+    height: 90px;
+    border-radius: 3px;
+    z-index: 999;
+    display: none;
+    position: relative;
+    top: -93px;
+}
+.section3 .left .bottom .blocktip .pic:hover .shadow{
+    display: block;
+
+}
+.section3 .left .bottom .blocktip p{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    line-height: 18px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.section3 .left .bottom .blocktip span{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #999;
+    cursor: pointer;
+}
+.section3 .left .bottom .blocktip p:hover{
+    color: #fd4c5d;
+}
+.section3 .left .bottom .blocktip span:hover{
+    color: #fd4c5d;
+}
+
+
+
+
+
+
+
+
+.section3 .right .block{
+    width: 260px;
+}
+.section3 .right .title{
+    height: 40px;
+    width: 90px;
+    position: absolute;
+
+}
+.section3 .right .title h3{
+    font-family: 微软雅黑;
+    font-size: 18px;
+    line-height: 36px;
+}
+.section3 .right .title h3 a{
+    color: black;
+}
+.section3 .right .title h3 a:hover{
+    color: #fd4c5d;
+}
+.section3 .right .block #paihang {
+    width: 260px;
+    height: 30px;
+    text-align: center;
+}
+.section3 .right .block .stage{
+    height: 24px;
+    width: 46px;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    list-style: none;
+    float: right;
+    line-height: 20px;
+    display: inline-block;
+    padding: 4px 6px 0px 6px;
+    border-radius: 3px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+}
+.section3 .right .block .stage .control {
+    margin-top: 26px;
+    width: 260px;
+    height: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    left: 900px;
+}
+.section3 .right .block .stage .control li{
+    font-size: 12px;
+    text-align: left;
+    list-style: none;
+    position: relative;
+}
+.section3 .right .block .stage .control li a{
+    color: black;
+}
+.section3 .right .block .stage .control li a:hover{
+    color: #fd4c5d;
+}
+
+
+
+
+.section3 .right .block .stage .control .has-img{
+    height: 50px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.section3 .right .block .stage .control .has-img img{
+    border-radius: 3px;
+}
+
+.section3 .right .block .stage .control .has-img b{
+    line-height: 18px;
+    height: 17px;
+    overflow: hidden;
+    font-weight: normal;
+    padding-left: 10px;
+}
+.section3 .right .block .stage .control .has-img b a{
+    font-size: 12px;
+    margin-top: -3px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.section3 .right .block .stage .control .has-img b a p{
+    color: #999;
+}
+
+
+
+.section3 .right .block .stage .control li.has-img > span {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 12px;
+    font-style: normal;
+    background: rgba(251,91,104,0.9);
+    border-radius: 3px 0 3px 0;
+}
+.section3 .right .block .stage .control li.has-img > span i {
+    color: #fff;
+}
+.section3 .right .block .stage .control li > span {
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.section3 .right .block .stage .control li > span i {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    text-align: left;
+    text-indent: 4px;
+    color: #999;
+    font-family: Arial;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+.section3 .right .footer{
+    line-height: 28px;
+    text-align: center;
+    display: block;
+    height: 28px;
+    width: 260px;
+    bottom: 0;
+    margin-top: 420px;
+}
+.section3 .right .footer a{
+    display: block;
+    background: #eee;
+    color: #333;
+    border-radius: 3px;
+    font-family: 微软雅黑;
+    font-size: 12px;
+}
+.section3 .right .footer a:hover {
+    background: #e4e4e4;
+}
+
